@@ -8,8 +8,7 @@
 
 <body>
     <header class="main-header">
-                <a href="index.html" class="header-logo logo">DEVICE</a>
-        
+        <a href="index.html" class="header-logo logo">DEVICE</a>
 
         <!--  поиск, вход, сравнить, корзина -->
         <div class="row-top">
@@ -19,8 +18,9 @@
             </form>
 
             <ul class="user-login head-center">
-                <li class="login">вход</li>
                 <li class="user active">Валентин Петухов</li>
+                <li class="loginoff"><a href="#">Выход</a></li>
+
             </ul>
             <ul class="compare-basket head-right">
                 <li class="compare compare-item">Сравнить</li>
@@ -36,24 +36,26 @@
             <nav class="main-nav navigation-list">
                 <ul class="nav-list head-left">
                     <li class="nav-catalog-items">
-                        <a>Каталог товаров</a>
+                        <a href="#">Каталог товаров</a>
                         <ul class="catalog-items">
-                            <li class="catalog-item first-column"><a href="catalog.html">виртуальная реальность</a></li>
-                            <li class="catalog-item first-column"><a href="catalog.html">моноподы для селфи</a></li>
-                            <li class="catalog-item first-column"><a href="catalog.html">Экшн-камеры</a></li>
-                            <li class="catalog-item second-column"><a href="catalog.html">Фитнес браслеты</a></li>
-                            <li class="catalog-item second-column"><a href="catalog.html">Умные часы</a></li>
-                            <li class="catalog-item third-column"><a href="catalog.html">Квадрокоптеры</a></li>
+                            <li class="catalog-item"><a href="catalog.html">виртуальная реальность</a></li>
+                            <li class="catalog-item"><a href="catalog.html">моноподы для селфи</a></li>
+                            <li class="catalog-item"><a href="catalog.html">Экшн-камеры</a></li>
+                        </ul>
+                        <ul class="catalog-items">
+                            <li class="catalog-item"><a href="catalog.html">Фитнес браслеты</a></li>
+                            <li class="catalog-item"><a href="catalog.html">Умные часы</a></li>
+                        </ul>
+                        <ul class="catalog-items">
+                            <li class="catalog-item"><a href="catalog.html">Квадрокоптеры</a></li>
                         </ul>
                     </li>
                 </ul>
-                <ul class="nav-delivery-items head-center">
+                <ul class="nav-delivery-items head-right">
                     <li class="nav-delivery-item nav-delivery"><a href="#">Доставка</a></li>
                     <li class="nav-guarant-item nav-guarant"><a href="#">Гарантия</a></li>
+                    <li class="nav-contact-item nav-contact"><a href="#">Контакты</a></li>
                 </ul>
-                
-                <a href="#" class="nav-contact-items head-right">Контакты</a>
-                
             </nav>
 
         </section>
@@ -73,8 +75,7 @@
                 </ul>
             </div>
 
-            <section class="left-container">
-                <h2 class="hidden-heading">Фильтр товаров</h2>
+            <aside class="left-container">
                 <p class="filters">Фильтр:</p>
                 <form action="#" class="filters">
                     <!--Стоимость-->
@@ -107,13 +108,12 @@
                             <label for="pink">Розовый</label>
                         </p>
 
-
                     </fieldset>
                     <!--блютуз-->
                     <fieldset class="filter-bluetooth">
                         <legend>Bluetooth</legend>
                         <p>
-                            <input type="radio" name="bluetooth" id="bt-yes"  checked>
+                            <input type="radio" name="bluetooth" id="bt-yes" checked>
                             <label for="bt-yes">Есть</label>
                         </p>
                         <p>
@@ -126,7 +126,7 @@
 
                 </form>
 
-            </section>
+            </aside>
 
             <div class="right-container">
                 <section class="product-sorting">
