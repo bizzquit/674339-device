@@ -1,0 +1,65 @@
+/* ---ШРИФТЫ-----  */
+
+@font-face {
+    font-family: 'Gilroy';
+    font-weight: 900;
+    font-style: normal;
+    src: local('Gilroy ExtraBold'), local('Gilroy-ExtraBold'),
+    url('../fonts/gilroyextrabold.woff2') format('woff2'),
+    url('../fonts/gilroyextrabold.woff') format('woff'),
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    font-weight: 300;
+    font-style: normal;
+    src: local('Gilroy Light'), local('Gilroy-Light'),
+    url('../fonts/gilroylight.woff2') format('woff2'),
+    url('../fonts/gilroylight.woff') format('woff'),
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-style: normal;
+    src: local('Open Sans Regular'), local('OpenSans-Regular'),
+    url('../fonts/opensans.woff2') format('woff2'),
+    url('../fonts/opensans.woff') format('woff'),
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-weight: 300;
+    font-style: normal;
+    src: local('Open Sans Light'), local('OpenSans-Light'),
+    url('../fonts/opensanslight.woff2') format('woff2'),
+    url('../fonts/opensanslight.woff') format('woff'),
+}
+
+/*-----ОБЩИЕ СТИЛИ----*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.allcontainer {
+    padding: 0 20px;
+    width: 1160px;
+    margin: 0 auto;
+}
+
+
+
+
+.visually-hidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
