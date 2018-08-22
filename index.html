@@ -22,12 +22,13 @@
                 </form>
 
                 <ul class="user-login head-center">
-                    <li class="login active"><a href="#">Вход</a></li>
+                    <li class="login active">
+                        <a href="#"><img src="img/user.svg" alt="user icon">Вход</a></li>
                     <li class="user">Валентин Петухов</li>
                 </ul>
                 <ul class="compare-basket head-right">
-                    <li class="compare compare-item">Сравнить</li>
-                    <li class="basket basket-item">Корзина</li>
+                    <li class="compare compare-item"><a href="#"><img src="img/compare.svg" alt="Сравнить">Сравнить</a></li>
+                    <li class="basket basket-item"><a href="№"><img src="img/cart.svg" alt="Корзина">Корзина</a></li>
                 </ul>
 
             </div>
@@ -37,11 +38,11 @@
             <section class="row-bottom">
                 <h2 class="visually-hidden">Каталог товаров</h2>
                 <nav class="main-nav navigation-list">
-                    <a href="#">Каталог товаров</a>
+                    <a href="#" class="catalog">Каталог товаров</a>
                     <div class="nav-catalog-items">
                         <ul class="catalog-items">
-                            <li class="catalog-item"><a href="catalog.html">виртуальная реальность</a></li>
-                            <li class="catalog-item"><a href="catalog.html">моноподы для селфи</a></li>
+                            <li class="catalog-item"><a href="catalog.html">Виртуальная реальность</a></li>
+                            <li class="catalog-item"><a href="catalog.html">Моноподы для селфи</a></li>
                             <li class="catalog-item"><a href="catalog.html">Экшн-камеры</a></li>
                         </ul>
                         <ul class="catalog-items">
@@ -65,24 +66,24 @@
         </header>
 
         <main>
-
             <!--Слайдер самых продаваемых-->
             <section class="main-slider">
                 <h2 class="visually-hidden">Самые покупаемые товары</h2>
                 <ul class="main-slider-items">
-                    <li class="main-slider-item slider-list-1">
+                    <li class="main-slider-item active">
+
                         <div class="slideleft">
                             <img src="img/slider-1.png" alt="Самая длинная палка для сэлфи" width="384" height="486">
                         </div>
 
                         <div class="slideright">
-                            <b>Делай селфи,как Бен Стиллер!</b>
-                            <p>Самая длинная палка для селфи доступна в нашем магазине.Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+                            <b>Делай селфи,<br>как Бен Стиллер!</b>
+                            <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
                             <a href="#" class="btn">Подробнее</a>
                             <table class="specifications">
                                 <tr class="specific-digits">
-                                    <td>8,5 М</td>
-                                    <td>5 КГ</td>
+                                    <td>8,5 м</td>
+                                    <td>5 кг</td>
                                     <td>Карбон</td>
                                 </tr>
                                 <tr class="specific-info">
@@ -96,7 +97,10 @@
 
 
                     </li>
-                    <li class="main-slider-item slider-list-2">
+
+                    <li class="main-slider-item">
+
+
                         <div class="slideleft">
                             <img src="img/slider-2.png" alt="Самая длинная палка для сэлфи" width="345" height="485">
                         </div>
@@ -123,7 +127,7 @@
 
 
                     </li>
-                    <li class="main-slider-item slider-list-3">
+                    <li class="main-slider-item ">
                         <div class="slideleft">
                             <img src="img/slider-3.png" alt="Самая длинная палка для сэлфи" width="526" height="334">
                         </div>
@@ -152,7 +156,7 @@
                 </ul>
 
                 <!--Радиокнопки для переключения слайдеров-->
-                <input type="radio" name="main-slider" id="slide1" checked>
+                <input type="radio" name="main-slider" id="slide1">
                 <input type="radio" name="main-slider" id="slide2">
                 <input type="radio" name="main-slider" id="slide3">
 
