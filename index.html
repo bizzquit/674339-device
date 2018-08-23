@@ -174,51 +174,43 @@
             <section class="popular-goods">
                 <h2 class="visually-hidden">Популярные товары</h2>
                 <ul class="popular-goods-items">
-                    <li class="popular-goods-item virtual">
+                    <li class="popular-goods-item">
 
                         <a href="catalog.html">
-                                            <img src="img/popular-1.svg" alt="Виртуальная реальность" width="97" height="55">
-                                        <p>Виртуальная реальность</p>
-                                       <span class="bg-item"></span>
+                           <i class="popular-icon virtual"></i>
+                            <p>Виртуальная реальность</p>
                         </a>
 
                     </li>
-                    <li class="popular-goods-item monopod">
+                    <li class="popular-goods-item ">
                         <a href="catalog.html">
-                                            <img src="img/popular-2.svg" alt="Моноподы для селфи" width="86" height="117">
-                                        <p>Моноподы для селфи</p>
-                                        <span class="bg-item"></span>
-                    </a>
+                            <i class="popular-icon monopod"></i>
+                            <p>Моноподы для селфи</p>
+                        </a>
                     </li>
-                    <li class="popular-goods-item camers">
-
+                    <li class="popular-goods-item ">
                         <a href="catalog.html">
-                        <img src="img/popular-3.svg" alt="Экшн-камеры" width="71" height="87">
-                        <p>Экшн-камеры</p>
-                        <span class="bg-item"></span>
-                    </a>
+                            <i class="popular-icon camers"></i>
+                            <p>Экшн-камеры</p>
+                        </a>
                     </li>
-                    <li class="popular-goods-item fitness-bracelet">
-
+                    <li class="popular-goods-item ">
                         <a href="catalog.html">
-                        <img src="img/popular-4.svg" alt="Фитнес браслеты" width="107" height="65">
-                                        <p>Фитнес браслеты</p>
-                                        <span class="bg-item"></span>
-                    </a>
+                            <i class="popular-icon fitness-bracelet"></i>
+                            <p>Фитнес браслеты</p>
+                        </a>
                     </li>
-                    <li class="popular-goods-item smart-watch">
+                    <li class="popular-goods-item ">
                         <a href="catalog.html">
-                        <img src="img/popular-5.svg" alt="Умные часы" width="56" height="98">
-                                        <p>Умные часы</p>
-                                        <span class="bg-item"></span>
-                    </a>
+                            <i class="popular-icon smart-watch"></i>
+                            <p>Умные часы</p>
+                        </a>
                     </li>
-                    <li class="popular-goods-item quadrupter">
+                    <li class="popular-goods-item ">
                         <a href="catalog.html">
-                        <img src="img/popular-6.svg" alt="Квадрокоптеры" width="132" height="69">
-                                        <p>Квадрокоптеры</p>
-                                        <span class="bg-item"></span>
-                    </a>
+                            <i class="popular-icon quadrupter"></i>
+                            <p>Квадрокоптеры</p>
+                        </a>
                     </li>
                 </ul>
             </section>
@@ -282,30 +274,30 @@
 
 
             <!-- О нас + Контакты-->
-            <section class="main-about">
-                <h2 class="about">О нас</h2>
-                <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-                <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-                <ul>
-                    <li>Деловые линии</li>
-                    <li>Автотрейдинг</li>
-                    <li>ЖелДорЭкспедиция</li>
-                </ul>
-                <a href="#" class="btn-main-about">Подробнее о нас</a>
+            <div class="about-contact">
+                <section class="main-about">
+                    <h2 class="about">О нас</h2>
+                    <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+                    <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+                    <ul>
+                        <li>Деловые линии</li>
+                        <li>Автотрейдинг</li>
+                        <li>ЖелДорЭкспедиция</li>
+                    </ul>
+                    <a href="#" class="btn-main-about btn">Подробнее о нас</a>
+                </section>
+
+                <section class="main-contact">
+                    <h2 class="contacts">Контакты</h2>
+                    <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+                    <p class="maps-contact">
+                        <a href=""><img src="img/map-small.jpg" alt="Где мы находимся" width="560" height="222"></a>
+                    </p>
+                    <a href="#" class="btn-main-contact btn">Напишите нам</a>
 
 
-            </section>
-
-            <section class="main-contact">
-                <h2 class="contacts">Контакты</h2>
-                <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-                <p class="maps-contact">
-                    <a href=""><img src="img/map-small.jpg" alt="Где мы находимся" width="560" height="222"></a>
-                </p>
-                <a href="#" class="btn-main-contact">Напишите нам</a>
-
-
-            </section>
+                </section>
+            </div>
 
         </main>
 
@@ -371,14 +363,14 @@
                 <textarea name="message" id="message" cols="30" rows="10" placeholder="В свободной форме"></textarea>
                 <button type="submit" class="writeus-btn">Отправить</button>
             </form>
-            <button class="close-popup" aria-label="Закрыть контакты"></button>
+            <button type="button" class="close-popup" aria-label="Закрыть контакты"></button>
 
         </section>
 
         <section class="popup-maps hidden">
             <h2 class="visually-hidden">Где мы находимся?</h2>
             <img src="img/map-big.jpg" alt="Наши координаты" width="100" height="100">
-            <button class="close-popup" aria-label="Закрыть карту"></button>
+            <button type="button" class="close-popup" aria-label="Закрыть карту"></button>
 
 
         </section>

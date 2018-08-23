@@ -421,20 +421,57 @@ ul.catalog-items {
     letter-spacing: 0.01em;
 }
 
-.popular-goods-item a:hover .bg-item {
+.popular-goods .popular-icon {
+    display: block;
+    position: relative;
+    width: 160px;
+    height: 160px;
+    background-color: #f7e296;
+    margin-bottom: 15px;
+}
+
+.popular-goods .popular-icon::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    bottom: 0;
+}
+
+.popular-icon.virtual::after {
+    background-image: url(../img/popular-1.svg);
+}
+
+.popular-icon.monopod::after {
+    background-image: url(../img/popular-2.svg);
+    top: 20px;
+}
+
+.popular-icon.camers::after {
+    background-image: url(../img/popular-3.svg);
+}
+
+.popular-icon.fitness-bracelet::after {
+    background-image: url(../img/popular-4.svg);
+}
+
+.popular-icon.smart-watch::after {
+    background-image: url(../img/popular-5.svg);
+}
+
+.popular-icon.quadrupter::after {
+    background-image: url(../img/popular-6.svg);
+}
+
+.popular-goods-item a:hover .popular-icon {
     background: rgba(240, 197, 46, 1);
 }
 
-.popular-goods-item a:active > img,
+.popular-goods-item a:active > i,
 .popular-goods-item a:active > p {
     opacity: 0.3;
-}
-
-.popular-goods-item img {
-    display: block;
-    position: relative;
-    left: 0px;
-    top: 43px;
 }
 
 /*-- слайдер услуг--*/
@@ -524,4 +561,44 @@ ul.catalog-items {
 
 .partner-items li {
     align-self: center;
+}
+
+/*---------about-contact-----*/
+
+.about-contact {
+    display: flex;
+}
+
+.about-contact section::before {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 7px;
+    background: rgba(0, 0, 0, 1);
+}
+
+.about-contact section {
+    width: 560px;
+    align-items: baseline;
+    justify-content: space-around;
+}
+
+.about-contact h2 {
+    font-family: 'Gilroy', 'Helvetica', sans-serif;
+    font-weight: 900;
+    font-size: 47px;
+    line-height: 48px;
+    letter-spacing: 0.1em;
+}
+
+.about-contact p {
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    font-weight: 400;
+    color: rgba(70, 70, 70, 1);
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.main-about p {
+    width: 495px;
 }
