@@ -69,6 +69,15 @@ body {
     color: rgba(0, 0, 0, 1);
 }
 
+.header-logo {
+    display: block;
+    width: 164px;
+    height: 36px;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+}
+
 .main-header {
     height: 200px;
     padding: 1px 60px 43px;
@@ -177,7 +186,7 @@ body {
     transition: 0.3s;
 }
 
-ul.catalog-items {
+.row-bottom .catalog-items {
     width: 200px;
     font-size: 15px;
     line-height: 35px;
@@ -192,6 +201,51 @@ ul.catalog-items {
 .nav-delivery-items li:last-child {
     width: 260px;
 }
+
+/*------- no front-----*/
+
+.head {
+    display: block;
+    padding-left: 60px;
+}
+
+.title-page {
+    font-family: 'Gilroy', 'Helvetica', sans-serif;
+    font-weight: 900;
+    font-size: 47px;
+    line-height: 56px;
+    letter-spacing: 0.01em;
+}
+
+.breadcrumbs {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.breadcrumbs a,
+.breadcrumbs li {
+    font-family: 'Open Sans',
+    'Arial',
+    sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+}
+
+.breadcrumbs a::after {
+    content: " > ";
+    color: black;
+    margin: 0 10px;
+}
+
+.main-container-center {
+    display: flex;
+}
+
 
 /*--Слайдер пробуем анимировать-*/
 
@@ -336,6 +390,7 @@ ul.catalog-items {
     letter-spacing: .2em;
     text-transform: uppercase;
     color: rgba(0, 0, 0, 1);
+    border: 0;
 }
 
 .btn:active {
@@ -361,6 +416,10 @@ ul.catalog-items {
     bottom: 0;
     width: 100%;
     height: 100%
+}
+
+.filter-btn {
+    width: 270px;
 }
 
 /*-----таблица---*/
@@ -628,7 +687,117 @@ ul.catalog-items {
     letter-spacing: 0.1em;
 }
 
+/* --Каталог товаров и фильтр---*/
 
+.left-container {
+    width: 200px;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: rgba(238, 238, 238, 1);
+}
+
+.filters fieldset {
+    border: none;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+    border-bottom: 2px solid #000000;
+}
+
+p.filters,
+p.sorting-title {
+    font-family: 'Gilroy', 'Helvetica', sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+}
+
+.left-container legend {
+    font-family: 'Gilroy', 'Helvetica', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+}
+
+.filter-color label,
+.filter-bluetooth label {
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 40px;
+    letter-spacing: 0.01em;
+    color: rgba(0, 0, 0, 1);
+}
+
+.filter-color label::before {
+    content: "";
+    position: relative;
+    display: block;
+    width: 27px;
+    height: 40px;
+    float: left;
+    margin-right: 10px;
+    background: url(../img/checkbox-off.svg) no-repeat left 8px;
+}
+
+input[type="checkbox"]:checked ~ label::before {
+    background: url(../img/checkbox-on.svg) no-repeat left 8px;
+}
+
+.filter-bluetooth label::before {
+    content: "";
+    position: relative;
+    display: block;
+    width: 27px;
+    height: 40px;
+    float: left;
+    margin-right: 10px;
+    background: url(../img/radio-off.svg) no-repeat left 8px;
+}
+
+input[type="radio"]:checked ~ label::before {
+    background: url(../img/radio-on.svg) no-repeat left 8px;
+}
+
+.right-container {
+    width: 760px;
+    margin-left: 80px;
+}
+
+
+.product-items {
+    display: flex;
+    width: 760px;
+    justify-content: space-between;
+    flex-flow: wrap;
+    position: relative;
+    margin: auto;
+    padding: 0;
+    list-style: none;
+}
+
+.product-item {
+    width: 360px;
+}
+
+.image-product {
+    width: 360px;
+    height: 380px;
+    overflow: hidden
+}
+
+.hidden-hover {
+    /* display: none;*/
+    position: absolute;
+    width: 360px;
+    height: 380px;
+    top: 0;
+    left: 0;
+    background-color: rgba(238, 238, 238, 0.3);
+    z-index: 10;
+}
 
 /*-----------FOOTER-------*/
 
