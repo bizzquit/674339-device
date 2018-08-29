@@ -1,12 +1,11 @@
 /* ---ШРИФТЫ-----  */
-
 @font-face {
     font-family: 'Gilroy';
     font-weight: 900;
     font-style: normal;
     src: local('Gilroy ExtraBold'), local('Gilroy-ExtraBold'),
         url('../fonts/gilroyextrabold.woff2') format('woff2'),
-        url('../fonts/gilroyextrabold.woff') format('woff'),
+        url('../fonts/gilroyextrabold.woff') format('woff');
 }
 
 @font-face {
@@ -15,7 +14,7 @@
     font-style: normal;
     src: local('Gilroy Light'), local('Gilroy-Light'),
         url('../fonts/gilroylight.woff2') format('woff2'),
-        url('../fonts/gilroylight.woff') format('woff'),
+        url('../fonts/gilroylight.woff') format('woff');
 }
 
 @font-face {
@@ -24,7 +23,7 @@
     font-style: normal;
     src: local('Open Sans Regular'), local('OpenSans-Regular'),
         url('../fonts/opensans.woff2') format('woff2'),
-        url('../fonts/opensans.woff') format('woff'),
+        url('../fonts/opensans.woff') format('woff');
 }
 
 @font-face {
@@ -33,11 +32,10 @@
     font-style: normal;
     src: local('Open Sans Light'), local('OpenSans-Light'),
         url('../fonts/opensanslight.woff2') format('woff2'),
-        url('../fonts/opensanslight.woff') format('woff'),
+        url('../fonts/opensanslight.woff') format('woff');
 }
 
 /*-----ОБЩИЕ СТИЛИ----*/
-
 body {
     margin: 0;
     padding: 0;
@@ -63,7 +61,6 @@ body {
 }
 
 /*---header----*/
-
 .main-header a {
     text-decoration: none;
     color: rgba(0, 0, 0, 1);
@@ -130,17 +127,14 @@ body {
     position: relative;
 }
 
-
 .search {
     width: 500px;
     padding-right: 105px;
 }
 
-
 .user-login {
     width: 280px;
 }
-
 
 .user-login li {
     display: none;
@@ -169,7 +163,6 @@ body {
 }
 
 /*---row-bottom---*/
-
 .navigation-list .catalog,
 .navigation-list > ul:last-child {
     font-size: 18px;
@@ -179,7 +172,6 @@ body {
     letter-spacing: 0.2em;
     text-transform: uppercase;
 }
-
 
 .nav-catalog-items {
     display: none;
@@ -195,7 +187,6 @@ body {
 }
 
 /*.nav-catalog-items,*/
-
 .catalog:hover ~ .nav-catalog-items,
 .nav-catalog-items:hover {
     display: flex;
@@ -237,7 +228,6 @@ body {
 }
 
 /*------- no front-----*/
-
 .head {
     display: block;
     padding-left: 60px;
@@ -259,9 +249,7 @@ body {
 
 .breadcrumbs a,
 .breadcrumbs li {
-    font-family: 'Open Sans',
-        'Arial',
-        sans-serif;
+    font-family: 'Open Sans', 'Arial', sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
@@ -324,10 +312,7 @@ body {
     z-index: -1;
 }
 
-
-
 /*--Слайдер пробуем анимировать-*/
-
 .main-slider {
     background-image: -webkit-linear-gradient(#f7e296 120px, #fff 120px, #fff);
     background-image: -o-linear-gradient(#f7e296 120px, #fff 120px, #fff);
@@ -349,7 +334,6 @@ body {
 .main-slider-item {
     display: none;
     z-index: 0;
-
 }
 
 .slideleft {
@@ -412,21 +396,12 @@ body {
     letter-spacing: 0.01em;
     color: rgba(70, 70, 70, 1);
     margin-bottom: 25px;
-
-}
-
-#slide1:checked ~ .main-slider-items > .slide1,
-#slide2:checked ~ .main-slider-items > .slide2,
-#slide3:checked ~ .main-slider-items > .slide3 {
-    display: flex;
-    z-index: 1;
 }
 
 .main-slider .btn {
     width: 220px;
     margin-left: 5px;
 }
-
 
 .main-slider .controls {
     right: 82px;
@@ -450,7 +425,7 @@ body {
 #slide1:checked ~ .controls label:nth-of-type(1),
 #slide2:checked ~ .controls label:nth-of-type(2),
 #slide3:checked ~ .controls label:nth-of-type(3) {
-    /* background: #000000;*/
+    background: #000000;
 }
 
 .main-slider label:after {
@@ -466,7 +441,6 @@ body {
 }
 
 /*-- Кнопка .btn--*/
-
 .btn {
     font-family: 'Gilroy', 'Helvetica', sans-serif;
     font-size: 18px;
@@ -516,7 +490,6 @@ body {
 }
 
 /*-----таблица---*/
-
 .specifications {
     border: none;
     width: 100%;
@@ -542,7 +515,6 @@ body {
 }
 
 /*----------Популярные товары---*/
-
 .popular-goods {
     min-height: 250px;
     position: relative;
@@ -638,7 +610,6 @@ body {
 }
 
 /*-- слайдер услуг--*/
-
 .service-container-allweight {
     width: 100%;
     position: absolute;
@@ -702,14 +673,6 @@ body {
     display: none;
 }
 
-/*----- анимация блока----*/
-#service1:checked ~ .services-items-info > .service-delivery,
-#service2:checked ~ .services-items-info > .service-gaurante,
-#service3:checked ~ .services-items-info > .service-credit {
-    display: block;
-    z-index: 1;
-}
-
 .main-services .controls {
     right: 20px;
     position: absolute;
@@ -756,7 +719,6 @@ body {
     background-position: 50% 50%;
 }
 
-
 .services-item-info p {}
 
 /*---------- partners--*/
@@ -772,6 +734,38 @@ body {
 .partner-items li {
     align-self: center;
 }
+
+.partner-item a {
+    display: block;
+    width: 260px;
+    height: 100px;
+}
+
+.partner-dji a {
+    background-image: url(../img/logo1-dji.jpg);
+}
+
+.partner-spg a {
+    background-image: url(../img/logo2-spgadget.jpg);
+}
+
+.partner-gopro a {
+    background-image: url(../img/logo3-gopro.jpg);
+}
+
+.partner-vive a {
+    background-image: url(../img/logo4-vive.jpg);
+}
+
+.partner-item img {
+    opacity: 0;
+}
+
+.partner-item:hover img {
+    opacity: 1;
+    transition: 0.3s;
+}
+
 
 /*---------about-contact-----*/
 
@@ -849,7 +843,6 @@ body {
 }
 
 /* --Каталог товаров и фильтр---*/
-
 .left-container {
     width: 200px;
     padding-left: 60px;
@@ -968,7 +961,6 @@ a.active-sort {
     line-height: 24px;
     letter-spacing: 0.2em;
     color: rgba(0, 0, 0, 1);
-
     width: 200px;
 }
 
@@ -976,7 +968,7 @@ a.active-sort {
     display: flex;
     padding: 0;
     list-style: none;
-    widows: 60px;
+    width: 60px;
 }
 
 .up-down li {
@@ -1054,8 +1046,6 @@ a.active-sort {
     background-color: rgba(0, 0, 0, 0.08);
 }
 
-.paging li {}
-
 .paging a {
     text-decoration: none;
     font-family: 'Gilroy', 'Helvetica', sans-serif;
@@ -1069,14 +1059,15 @@ a.active-sort {
 
 .paging .active-page,
 .back a,
-.forward a {
+.forward a,
+.paging li:first-child,
+.paging li:last-child {
     color: rgba(0, 0, 0, 1);
 }
 
 .paging li:first-child,
 .paging li:last-child {
     min-width: 300px;
-    color: rgba(0, 0, 0, 1);
 }
 
 .forward {
@@ -1084,7 +1075,6 @@ a.active-sort {
 }
 
 /*-----------FOOTER-------*/
-
 .page-footer {
     width: 1160px;
     margin: 0 auto;
@@ -1196,9 +1186,13 @@ a.active-sort {
 }
 
 /*-------ПУПАПЫ-----*/
+.popup-writeus.hidden,
+.popup-maps.hidden {
+    display: none;
+}
 
 .popup-writeus {
-    display: none;
+    /* display: none;*/
     position: absolute;
     left: 20%;
     top: 1600px;
@@ -1236,4 +1230,19 @@ a.active-sort {
     letter-spacing: 0.01em;
     margin-left: 100px;
     width: 50%;
+}
+
+/*----- анимации ----*/
+#service1:checked ~ .services-items-info > .service-delivery,
+#service2:checked ~ .services-items-info > .service-gaurante,
+#service3:checked ~ .services-items-info > .service-credit {
+    display: block;
+    z-index: 1;
+}
+
+#slide1:checked ~ .main-slider-items > .slide1,
+#slide2:checked ~ .main-slider-items > .slide2,
+#slide3:checked ~ .main-slider-items > .slide3 {
+    display: flex;
+    z-index: 1;
 }

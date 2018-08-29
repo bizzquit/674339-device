@@ -12,7 +12,7 @@
     <div class="allcontainer">
         <header class="main-header">
             <h1 class="main-title header-logo logo">
-                <img src="img/logo.svg" alt="DEVICE" width="164" height="36">
+                <img src="img/logo.svg" alt="логотип DEVICE" width="164" height="36">
             </h1>
             <!--  поиск, вход, сравнить, корзина -->
             <div class="row-top">
@@ -252,17 +252,17 @@
             <section class="partners-items">
                 <h2 class="visually-hidden">Партнеры компании</h2>
                 <ul class="partner-items">
-                    <li class="partner-item">
-                        <a href=""><img src="img/logo1-dji.jpg" alt="dji" width="260" height="100" class="dji"></a>
+                    <li class="partner-item partner-dji">
+                        <a href=""><img src="img/logo1-dji-hover.jpg" alt="Логотип dji" width="260" height="100" class="dji"></a>
                     </li>
-                    <li class="partner-item">
-                        <a href=""><img src="img/logo2-spgadget.jpg" alt="SPGadgets" width="260" height="100"></a>
+                    <li class="partner-item partner-spg">
+                        <a href=""><img src="img/logo2-spgadget-hover.jpg" alt=" Логотип SPGadgets" width="260" height="100"></a>
                     </li>
-                    <li class="partner-item">
-                        <a href=""><img src="img/logo3-gopro.jpg" alt="GoPro" width="260" height="100"></a>
+                    <li class="partner-item partner-gopro">
+                        <a href=""><img src="img/logo3-gopro-hover.jpg" alt="Логотип GoPro" width="260" height="100"></a>
                     </li>
-                    <li class="partner-item">
-                        <a href=""><img src="img/logo4-vive.jpg" alt="VIVE" width="260" height="100"></a>
+                    <li class="partner-item partner-vive">
+                        <a href=""><img src="img/logo4-vive-hover.jpg" alt="Логотип VIVE" width="260" height="100"></a>
                     </li>
                 </ul>
             </section>
@@ -291,9 +291,39 @@
                     </p>
                     <a href="#" class="btn-main-contact btn">Напишите нам</a>
 
-
                 </section>
             </div>
+
+
+
+            <!-- popups-->
+            <section class="popup-writeus hidden">
+                <h2 class="visually-hidden">Написать нам письмо</h2>
+                <button type="button" class="close-popup" aria-label="Закрыть контакты"></button>
+                <form action="#" class="writeus">
+                    <label>Ваше имя:
+                        <input type="text" name="name" id="name" placeholder="Имя Фамилия"></label>
+                    <label>Ваш e-mail:
+                        <input type="email" name="email" id="email" placeholder="email@example.ru"></label>
+                    <label>Текст письма:
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="В свободной форме"></textarea></label>
+                    <button type="submit" class="writeus-btn">Отправить</button>
+                </form>
+
+
+            </section>
+
+            <section class="popup-maps hidden">
+                <h2 class="visually-hidden">Где мы находимся?</h2>
+                <img src="img/map-big.jpg" alt="Наши координаты" width="100" height="100">
+                <button type="button" class="close-popup" aria-label="Закрыть карту"></button>
+
+
+            </section>
+
+
+
+
 
         </main>
 
@@ -349,29 +379,6 @@
 
     </div>
 
-    <section class="popup-writeus hidden">
-        <h2 class="visually-hidden">Написать нам письмо</h2>
-        <button type="button" class="close-popup" aria-label="Закрыть контакты"></button>
-        <form action="#" class="writeus">
-            <label>Ваше имя:
-                <input type="text" name="name" id="name" placeholder="Имя Фамилия"></label>
-            <label>Ваш e-mail:
-                <input type="email" name="email" id="email" placeholder="email@example.ru"></label>
-            <label>Текст письма:
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="В свободной форме"></textarea></label>
-            <button type="submit" class="writeus-btn">Отправить</button>
-        </form>
-
-
-    </section>
-
-    <section class="popup-maps hidden">
-        <h2 class="visually-hidden">Где мы находимся?</h2>
-        <img src="img/map-big.jpg" alt="Наши координаты" width="100" height="100">
-        <button type="button" class="close-popup" aria-label="Закрыть карту"></button>
-
-
-    </section>
 
 
     <!--<script src="js/script.js" async></script>-->
