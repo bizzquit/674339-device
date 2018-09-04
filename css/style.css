@@ -1033,6 +1033,7 @@ a.active-sort {
     width: 11px;
     height: 10px;
     background-image: url(../img/icon-up-dir.svg);
+    font-size: 0;
 }
 
 .down-sort {
@@ -1040,6 +1041,7 @@ a.active-sort {
     width: 11px;
     height: 10px;
     background-image: url(../img/icon-down-dir.svg);
+    font-size: 0;
 }
 
 
@@ -1337,19 +1339,15 @@ a.active-sort {
 }
 
 /*-------ПУПАПЫ-----*/
-.popup-writeus.hidden,
-.popup-maps.hidden {
+.popup-writeus,
+.popup-maps {
     display: none;
 }
 
-/*
-.popup-maps.hidden {
+.popup-writeus.modal-show,
+.popup-maps.modal-show {
     display: block;
-*/
-/*
-.popup-writeus.hidden {
-    display: block;
-}*/
+}
 
 .popup-writeus,
 .popup-maps {
@@ -1366,7 +1364,8 @@ a.active-sort {
     box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.2);
 }
 
-.close-popup {
+.close-popup,
+.close-popup-writeus {
     position: absolute;
     width: 55px;
     height: 55px;
