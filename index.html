@@ -26,10 +26,17 @@
                     <button type="submit" class="search-btn">Найти</button>
                 </form>
 
+
+
                 <ul class="user-login head-center">
                     <li class="login active">
                         <a href="#"><img src="img/user.svg" alt="user icon">Войти</a></li>
-                    <li class="user"><a href="#"><img src="img/user.svg" alt="user icon">Валентин Петухов</a></li>
+                    <li class="user">
+                        <a href="profile.html"><img src="img/user.svg" alt="user icon">Валентин Петухов</a>
+                    </li>
+                    <li class="loginout">
+                        <a href="#">Выйти</a>
+                    </li>
                 </ul>
                 <ul class="compare-basket head-right">
                     <li class="compare compare-item"><a href="#"><img src="img/compare.svg" alt="Сравнить">Сравнить</a></li>
@@ -86,7 +93,7 @@
                             <div class="numeric">
                                 <span>01</span>
                             </div>
-                            <b>Делай селфи,<br>как Бен Стиллер!</b>
+                            <b>Делай селфи, как Бен Стиллер!</b>
                             <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
                             <a href="#" class="btn">Подробнее</a>
                             <table class="specifications">
@@ -111,7 +118,7 @@
                             <div class="numeric">
                                 <span>02</span>
                             </div>
-                            <b>Худеем правильно!</b>
+                            <b class="small-width">Худеем правильно!</b>
                             <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету</p>
                             <a href="#" class="btn">Подробнее</a>
                             <table class="specifications">
@@ -138,7 +145,7 @@
                             <div class="numeric">
                                 <span>03</span>
                             </div>
-                            <b>Порхает как бабочка,жалит как пчела!</b>
+                            <b>Порхает как бабочка, жалит как пчела!</b>
                             <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
                             <a href="#" class="btn">Подробнее</a>
                             <table class="specifications">
@@ -219,10 +226,8 @@
                 </ul>
             </section>
 
-
-
             <!--Слайдер услуг (доставка,гарантия,кредит)-->
-            <div class="service-container-allweight"></div>
+            <!--<div class="service-container-allweight"></div>-->
             <section class="main-services">
                 <h2 class="visually-hidden">Услуги компании</h2>
                 <input type="radio" name="service-slider" id="service1" checked>
@@ -319,7 +324,18 @@
                         </svg>
                     </p>
                     <ul class="footer-nav">
-                        <li><a href="#"><img src="img/user-footer.svg" alt="Войти" width="12" height="12">Войти</a></li>
+                        <li class="user user-footer">
+                            <a href="profile.html"><img src="img/user-footer.svg" alt="user icon">Валентин Петухов</a>
+                        </li>
+                        <li class="loginout loginout-footer">
+                            <a href="#">Выйти</a>
+                        </li>
+                        <li class="login login-footer active">
+                            <a href="#"><img src="img/user-footer.svg" alt="Войти" width="10" height="10">Войти</a>
+                        </li>
+
+
+
                         <li><a href="#"><img src="img/compare-footer.svg" alt="Сравнить" width="10" height="10">Сравнить</a></li>
                         <li><a href="#"><img src="img/cart-footer.svg" alt="Корзина" width="10" height="10">Корзина</a></li>
                     </ul>

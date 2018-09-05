@@ -1,16 +1,51 @@
 /*-----логинимся----*/
 var logIn = document.querySelector(".login");
 var logOut = document.querySelector(".user");
+var logExit = document.querySelector(".loginout");
+
+var logInFooter = document.querySelector(".login-footer");
+var logOutFooter = document.querySelector(".user-footer");
+var logExitFooter = document.querySelector(".loginout-footer");
+
 
 logIn.addEventListener("click", function () {
     logIn.classList.remove("active");
     logOut.classList.add("active");
+    logExit.classList.add("exit");
+    logInFooter.classList.remove("active");
+    logOutFooter.classList.add("active");
+    logExitFooter.classList.add("exit");
 });
 
-logOut.addEventListener("click", function () {
+logExit.addEventListener("click", function () {
     logOut.classList.remove("active");
     logIn.classList.add("active");
+    logExit.classList.remove("exit");
+    logOutFooter.classList.remove("active");
+    logInFooter.classList.add("active");
+    logExitFooter.classList.remove("exit");
 });
+
+
+logInFooter.addEventListener("click", function () {
+    logIn.classList.remove("active");
+    logOut.classList.add("active");
+    logExit.classList.add("exit");
+    logInFooter.classList.remove("active");
+    logOutFooter.classList.add("active");
+    logExitFooter.classList.add("exit");
+});
+
+logExitFooter.addEventListener("click", function () {
+    logOut.classList.remove("active");
+    logIn.classList.add("active");
+    logExit.classList.remove("exit");
+    logOutFooter.classList.remove("active");
+    logInFooter.classList.add("active");
+    logExitFooter.classList.remove("exit");
+});
+
+
 
 
 /*--- переменные для Напишите нам----*/
