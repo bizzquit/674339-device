@@ -1,3 +1,18 @@
+/*-----логинимся----*/
+var logIn = document.querySelector(".login");
+var logOut = document.querySelector(".user");
+
+logIn.addEventListener("click", function () {
+    logIn.classList.remove("active");
+    logOut.classList.add("active");
+});
+
+logOut.addEventListener("click", function () {
+    logOut.classList.remove("active");
+    logIn.classList.add("active");
+});
+
+
 /*--- переменные для Напишите нам----*/
 var link = document.querySelector(".btn-main-contact");
 var popup = document.querySelector(".popup-writeus");
@@ -27,4 +42,31 @@ linkClose.addEventListener("click", function (evt) {
 linkMapsClose.addEventListener("click", function (evt) {
     evt.preventDefault();
     popupMaps.classList.remove("modal-show");
+});
+
+
+
+/*-----УСЛУГИ---*/
+
+var delivery = document.querySelector(".service1");
+var gaurante = document.querySelector(".service2");
+var credit = document.querySelector(".service3");
+
+delivery.addEventListener("click", function () {
+    delivery.classList.add("active");
+    gaurante.classList.remove("active");
+    credit.classList.remove("active");
+});
+
+gaurante.addEventListener("click", function () {
+    gaurante.classList.add("active");
+    delivery.classList.remove("active");
+    credit.classList.remove("active");
+});
+
+credit.addEventListener("click", function () {
+    credit.classList.add("active");
+    delivery.classList.remove("active");
+    gaurante.classList.remove("active");
+
 });

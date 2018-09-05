@@ -69,11 +69,11 @@ body {
 .header-logo {
     display: block;
     width: 164px;
-    height: 36px;
+    height: 46px;
     margin: 0;
     padding: 0;
     margin-top: 20px;
-    margin-bottom: 10px;
+    font-weight: 900;
 }
 
 .main-header {
@@ -213,7 +213,6 @@ body {
     background-color: #f7e296;
 }
 
-/*.nav-catalog-items,*/
 .catalog:hover ~ .nav-catalog-items,
 .nav-catalog-items:hover {
     display: flex;
@@ -224,19 +223,29 @@ body {
 
 .main-header a:hover {
     opacity: 0.6;
-    transition: 0.3s;
+    /*transition: 0.3s;*/
 }
 
 .main-header a:active {
     opacity: 0.3;
-    transition: 0.3s;
+    /*transition: 0.3s;*/
 }
 
+.nav-catalog-items a {
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    font-size: 15px;
+    line-height: 35px;
+    letter-spacing: 0.01em;
+
+}
+
+
 .row-bottom .catalog-items {
-    width: 200px;
+    min-width: 160px;
     font-size: 15px;
     line-height: 35px;
     font-family: 'Open Sans', 'Arial', sans-serif;
+    margin-right: 40px;
 }
 
 .nav-delivery-items {
@@ -441,11 +450,6 @@ body {
     margin-bottom: 25px;
 }
 
-.main-slider .btn {
-    width: 220px;
-    margin-left: 5px;
-}
-
 .main-slider .controls {
     right: 82px;
     position: absolute;
@@ -462,6 +466,7 @@ body {
     width: 4px;
     border-radius: 50%;
     border: 1px solid;
+    font-size: 0;
 }
 
 .main-slider label:after {
@@ -481,44 +486,44 @@ body {
     font-family: 'Gilroy', 'Helvetica', sans-serif;
     font-size: 18px;
     font-weight: 900;
-    line-height: 24px;
+    line-height: 40px;
     position: relative;
     z-index: 0;
     display: block;
-    width: 50%;
-    padding: 5% 0;
     text-align: center;
     text-decoration: none;
-    letter-spacing: .2em;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
     color: rgba(0, 0, 0, 1);
     border: 0;
     cursor: pointer;
 }
 
-.btn:active {
-    color: #be9c22
-}
-
 .btn::before {
     content: '';
     position: absolute;
     z-index: -1;
-    top: 30px;
+    align-content: center;
+    top: 15px;
     left: 0;
     width: 100%;
     height: 10px;
-    transition: all 0.1s;
+    /* transition: all 0.1s;*/
     background-color: #f0c52e
 }
 
+.btn:active {
+    color: #be9c22
+}
+
 .btn:hover::before,
-.btn:focus::before {
+.btn:active::before {
     z-index: -1;
     top: 0;
     bottom: 0;
     width: 100%;
-    height: 100%
+    height: 30%;
+    /* transition: 0.3s;*/
 }
 
 .filter-btn {
@@ -529,6 +534,22 @@ body {
 
 .filter-btn::before {
     top: 15px;
+}
+
+.main-slider .btn {
+    width: 220px;
+    margin-left: 5px;
+}
+
+.main-slider .btn:hover::before,
+.main-slider .btn:active::before,
+.btn-main-contact:hover::before,
+.btn-main-contact:active::before,
+.btn-main-about:hover::before,
+.btn-main-about:active::before {
+    top: 50%;
+    height: 40px;
+    margin-top: -20px;
 }
 
 /*-----таблица---*/
@@ -596,6 +617,10 @@ body {
     font-size: 18px;
     line-height: 24px;
     letter-spacing: 0.01em;
+}
+
+.popular-icon.monopod ~ p {
+    width: 120px;
 }
 
 .popular-goods .popular-icon {
@@ -688,29 +713,21 @@ body {
 .services-items-listing {
     width: 275px;
     border-right: 7px solid black;
-    height: 240px;
+    min-height: 240px;
     display: flex;
     flex-direction: column;
     align-items: baseline;
-    margin-top: 19px;
-    font-family: 'Gilroy', 'Helvetica', sans-serif;
-    font-weight: 900;
-    font-size: 18px;
-    line-height: 24px;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    padding-top: 85px;
+    margin-top: 25px;
+    padding-top: 80px;
     margin-right: 77px;
 }
 
 .services-items-listing label {
     min-height: 40px;
-    width: 258px;
+    width: 280px;
     cursor: pointer;
     position: relative;
     margin-bottom: 24px;
-    padding-left: 20px;
-    line-height: 40px;
 }
 
 .services-item-info {
@@ -763,6 +780,67 @@ body {
     background-position: 50% 50%;
 }
 
+.btn-service span {
+    display: inline-block;
+    position: relative;
+    margin-top: 5px;
+    font-family: 'Gilroy', 'Helvetica', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 900;
+    text-align: center;
+    z-index: 0;
+    width: 160px;
+    text-decoration: none;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 1);
+}
+
+.btn-service span::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background-color: #f0c52e
+}
+
+.btn-service:hover span::before,
+.btn-service:active span::before {
+    z-index: -1;
+    top: -8px;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 40px;
+}
+
+.services-items-listing .active {
+    background: #000000;
+}
+
+.active span {
+    color: rgba(247, 225, 132, 1);
+}
+
+.active span::before {
+    background: none
+}
+
+.add-to-cart {
+    width: 200px;
+    text-align: center;
+}
+
+.add-to-cart:hover::before {
+    top: 0;
+    height: 40px;
+}
+
+
 /*---------- partners--*/
 .partner-items {
     display: flex;
@@ -804,7 +882,7 @@ body {
 
 .partner-item:hover img {
     opacity: 1;
-    transition: 0.3s;
+    /*transition: 0.3s;*/
 }
 
 /*---------about-contact-----*/
@@ -889,9 +967,9 @@ body {
     display: block;
     min-height: 222px;
     width: 560px;
-    background-image: url(../img/map-small.jpg);
+    background-color: rgba(234, 234, 234, 1);
     margin-top: 40px;
-    margin-bottom: 47px;
+    margin-bottom: 40px;
 }
 
 .btn-main-contact,
@@ -902,8 +980,14 @@ body {
 
 .btn-main-contact::before,
 .btn-main-about::before {
-    top: 35px;
+    top: 17px;
 }
+
+.filter-btn:hover::before {
+    top: 0;
+    min-height: 40px;
+}
+
 
 /* --Каталог товаров и фильтр---*/
 .left-container {
@@ -917,7 +1001,7 @@ body {
     flex-direction: column;
     border: none;
     padding: 0;
-    margin: 0;
+    margin-left: 0;
     border-bottom: 2px solid #000000;
     padding-bottom: 8px;
 }
@@ -951,6 +1035,62 @@ form.filters {
     margin-top: 10px;
 }
 
+.filter-price {
+    width: 100%;
+    height: 60px;
+    padding-top: 15px;
+}
+
+.filter-price-line {
+    width: 115px;
+    position: relative;
+    padding-bottom: 27px;
+}
+
+.filter-price-green-line {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #91c92f;
+}
+
+.filter-price-point {
+    position: absolute;
+    width: 20px;
+    height: 23px;
+    background-image: url(../img/filter-button.svg);
+    background-position: center;
+    cursor: pointer;
+}
+
+.filter-price-point.point-left {
+    left: -10px;
+    top: -10px;
+}
+
+.filter-price-point.point-right {
+    right: -10px;
+    top: -10px;
+}
+
+.filter-price-point-title {
+    opacity: 0.2;
+}
+
+.filter-price-point-title.point-left {
+    top: 10px;
+    left: 0px;
+}
+
+.filter-price-point-title.point-right {
+    top: 10px;
+    right: -30px;
+}
+
+.filter-price-point-title {
+    position: absolute;
+}
+
 .filter-color label,
 .filter-bluetooth label {
     font-family: 'Open Sans', 'Arial', sans-serif;
@@ -970,6 +1110,25 @@ form.filters {
     float: left;
     margin-right: 10px;
     background: url(../img/checkbox-off.svg) no-repeat left 8px;
+}
+
+.filter-color label:hover::before,
+.filter-color label:hover,
+.filter-bluetooth label:hover::before,
+.filter-bluetooth label:hover {
+    opacity: 0.6;
+}
+
+.filter-color label:active,
+.filter-bluetooth label:active,
+.filter-color label:active::before,
+.filter-bluetooth label:active::before {
+    opacity: 1;
+}
+
+input:disabled ~ label,
+input:disabled ~ label::before {
+    opacity: 0.25;
 }
 
 input[type="checkbox"]:checked ~ label::before {
@@ -1098,7 +1257,7 @@ a.active-sort {
     width: 360px;
     height: 380px;
     overflow: hidden;
-    margin-bottom: 15px;
+    margin-bottom: 14px;
 }
 
 .title-product {
@@ -1146,6 +1305,24 @@ a.active-sort {
     display: flex;
     cursor: pointer;
 }
+
+.compared-to {
+    text-decoration: none;
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 13px;
+    line-height: 36px;
+    letter-spacing: 0.01em;
+}
+
+.new-product::before {
+    content: "NEW";
+    position: absolute;
+
+}
+
+
 
 .paging {
     width: 700px;
@@ -1237,6 +1414,9 @@ a.active-sort {
     position: relative;
     width: 200px;
     align-self: flex-end;
+    width: 164px;
+    height: 46px;
+    font-weight: 900;
 }
 
 .footer-nav {
@@ -1460,10 +1640,6 @@ a.active-sort {
     z-index: 1;
 }
 
-#service1:checked ~ .services-items-listing label:nth-of-type(1) {
-    background: #000000;
-    color: rgba(247, 225, 132, 1);
-}
 
 .main-slider label:hover,
 #slide1:checked ~ .controls label:nth-of-type(1),

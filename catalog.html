@@ -12,7 +12,12 @@
     <div class="allcontainer">
         <header class="main-header">
             <a href="index.html" class="header-logo logo">
-                <img src="img/logo.svg" alt="DEVICE" width="164" height="36">
+                <!--<img src="img/logo.svg" alt="DEVICE" width="164" height="36">-->
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="164px" height="46px">
+                    <text kerning="auto" font-family="Myriad Pro" fill="rgb(0, 0, 0)" font-size="48px" x="0px" y="36px">
+                        <tspan font-size="48px" font-family="Gilroy" fill="#000000">DEVICE</tspan>
+                    </text>
+                </svg>
             </a>
 
             <!--  поиск, вход, сравнить, корзина -->
@@ -23,9 +28,9 @@
                 </form>
 
                 <ul class="user-login head-center">
-                    <li class="login active">
+                    <li class="login">
                         <a href="#"><img src="img/user.svg" alt="user icon">Войти</a></li>
-                    <li class="user">Валентин Петухов</li>
+                    <li class="user  active"><a href="#"><img src="img/user.svg" alt="user icon">Валентин Петухов</a></li>
                 </ul>
                 <ul class="compare-basket head-right">
                     <li class="compare compare-item"><a href="#"><img src="img/compare.svg" alt="Сравнить">Сравнить</a></li>
@@ -83,10 +88,17 @@
                     <p class="filters">Фильтр:</p>
                     <form action="#" class="filters">
                         <!--Стоимость-->
-                        <fieldset class="filter-price">
+                        <fieldset class="filter-price-all">
                             <legend>Стоимость</legend>
-                            <input type="range" min="0" max="5000" step="1" value="50">
-                            <p><b class="filter-min-num">от 0</b> <b class="filter-max-num">до 50000</b></p>
+                            <div class="filter-price">
+                                <div class="filter-price-line">
+                                    <div class="filter-price-green-line"></div>
+                                    <span class="filter-price-point point-left"></span>
+                                    <b class="filter-price-point-title point-left">от 0</b>
+                                    <span class="filter-price-point point-right"></span>
+                                    <b class="filter-price-point-title point-right">до 5000</b>
+                                </div>
+                            </div>
                         </fieldset>
                         <!--выбор цвета-->
                         <fieldset class="filter-color">
@@ -189,10 +201,10 @@
                                     <p class="price-product">2500 руб.</p>
                                 </a>
                             </li>
-                            <li class="product-item">
+                            <li class="product-item new-product">
                                 <div class="image-product">
                                     <img src="img/item-4.jpg" alt="Селфи-палка «Следуй за мной»" width="360" height="380">
-                                    <span class="new-product">NEW</span>
+                                    <!--<span class="new-product">NEW</span>-->
                                     <div class="hidden-hover">
                                         <a href="#" class="add-to-cart btn">В корзину</a>
                                         <a href="" class="compared-to">Добавить к сравнению</a>
@@ -232,7 +244,14 @@
 
                 <!-- top -->
                 <div class="footer-top">
-                    <p class="footer-logo logo"><img src="img/logo-footer.svg" alt="DEVICE" width="163" height="36"></p>
+                    <p class="footer-logo logo">
+                        <!--<img src="img/logo-footer.svg" alt="DEVICE" width="163" height="36">-->
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="164px" height="46px">
+                            <text kerning="auto" font-family="Myriad Pro" fill="rgb(0, 0, 0)" font-size="48px" x="0px" y="36px">
+                                <tspan font-size="48px" font-family="Gilroy" fill="#000000">DEVICE</tspan>
+                            </text>
+                        </svg>
+                    </p>
                     <ul class="footer-nav">
                         <li><a href="#"><img src="img/user-footer.svg" alt="Войти" width="10" height="10">Войти</a></li>
                         <li><a href="#"><img src="img/compare-footer.svg" alt="Сравнить" width="10" height="10">Сравнить</a></li>
@@ -277,6 +296,7 @@
 
         </footer>
     </div>
+    <script src="js/script.js" async></script>
 </body>
 
 </html>
