@@ -8,7 +8,8 @@ var logOutFooter = document.querySelector(".user-footer");
 var logExitFooter = document.querySelector(".loginout-footer");
 
 
-logIn.addEventListener("click", function () {
+logIn.addEventListener("click", function (evt) {
+    evt.preventDefault();
     logIn.classList.remove("active");
     logOut.classList.add("active");
     logExit.classList.add("exit");
@@ -17,7 +18,8 @@ logIn.addEventListener("click", function () {
     logExitFooter.classList.add("exit");
 });
 
-logExit.addEventListener("click", function () {
+logExit.addEventListener("click", function (evt) {
+    evt.preventDefault();
     logOut.classList.remove("active");
     logIn.classList.add("active");
     logExit.classList.remove("exit");
@@ -27,7 +29,8 @@ logExit.addEventListener("click", function () {
 });
 
 
-logInFooter.addEventListener("click", function () {
+logInFooter.addEventListener("click", function (evt) {
+    evt.preventDefault();
     logIn.classList.remove("active");
     logOut.classList.add("active");
     logExit.classList.add("exit");
@@ -36,7 +39,8 @@ logInFooter.addEventListener("click", function () {
     logExitFooter.classList.add("exit");
 });
 
-logExitFooter.addEventListener("click", function () {
+logExitFooter.addEventListener("click", function (evt) {
+    evt.preventDefault();
     logOut.classList.remove("active");
     logIn.classList.add("active");
     logExit.classList.remove("exit");
@@ -59,19 +63,23 @@ var linkClose = document.querySelector(".close-popup-writeus");
 var linkMapsClose = document.querySelector(".close-popup");
 
 /*----Открытие Напишите нам----*/
-link.addEventListener("click", function () {
+link.addEventListener("click", function (evt) {
+    evt.preventDefault();
     popup.classList.add("modal-show");
 });
 /*---Открытие Карты----*/
-linkMaps.addEventListener("click", function () {
+linkMaps.addEventListener("click", function (evt) {
+    evt.preventDefault();
     popupMaps.classList.add("modal-show");
 });
 /*----- Закрытие напишите нам----*/
-linkClose.addEventListener("click", function () {
+linkClose.addEventListener("click", function (evt) {
+    evt.preventDefault();
     popup.classList.remove("modal-show");
 });
 /*---- закрытие Карты---*/
-linkMapsClose.addEventListener("click", function () {
+linkMapsClose.addEventListener("click", function (evt) {
+    evt.preventDefault();
     popupMaps.classList.remove("modal-show");
 });
 
@@ -83,19 +91,22 @@ var delivery = document.querySelector(".service1");
 var gaurante = document.querySelector(".service2");
 var credit = document.querySelector(".service3");
 
-delivery.addEventListener("click", function () {
+delivery.addEventListener("click", function (evt) {
+    evt.preventDefault();
     delivery.classList.add("active");
     gaurante.classList.remove("active");
     credit.classList.remove("active");
 });
 
-gaurante.addEventListener("click", function () {
+gaurante.addEventListener("click", function (evt) {
+    evt.preventDefault();
     gaurante.classList.add("active");
     delivery.classList.remove("active");
     credit.classList.remove("active");
 });
 
-credit.addEventListener("click", function () {
+credit.addEventListener("click", function (evt) {
+    evt.preventDefault();
     credit.classList.add("active");
     delivery.classList.remove("active");
     gaurante.classList.remove("active");
