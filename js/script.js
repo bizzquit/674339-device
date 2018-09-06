@@ -59,23 +59,19 @@ var linkClose = document.querySelector(".close-popup-writeus");
 var linkMapsClose = document.querySelector(".close-popup");
 
 /*----Открытие Напишите нам----*/
-link.addEventListener("click", function (evt) {
-    evt.preventDefault();
+link.addEventListener("click", function () {
     popup.classList.add("modal-show");
 });
 /*---Открытие Карты----*/
-linkMaps.addEventListener("click", function (evt) {
-    evt.preventDefault();
+linkMaps.addEventListener("click", function () {
     popupMaps.classList.add("modal-show");
 });
 /*----- Закрытие напишите нам----*/
-linkClose.addEventListener("click", function (evt) {
-    evt.preventDefault();
+linkClose.addEventListener("click", function () {
     popup.classList.remove("modal-show");
 });
 /*---- закрытие Карты---*/
-linkMapsClose.addEventListener("click", function (evt) {
-    evt.preventDefault();
+linkMapsClose.addEventListener("click", function () {
     popupMaps.classList.remove("modal-show");
 });
 
