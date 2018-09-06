@@ -114,21 +114,21 @@ var gaurante = document.querySelector(".service2");
 var credit = document.querySelector(".service3");
 
 delivery.addEventListener("click", function (evt) {
-    evt.preventDefault();
+
     delivery.classList.add("active");
     gaurante.classList.remove("active");
     credit.classList.remove("active");
 });
 
 gaurante.addEventListener("click", function (evt) {
-    evt.preventDefault();
+
     gaurante.classList.add("active");
     delivery.classList.remove("active");
     credit.classList.remove("active");
 });
 
 credit.addEventListener("click", function (evt) {
-    evt.preventDefault();
+
     credit.classList.add("active");
     delivery.classList.remove("active");
     gaurante.classList.remove("active");
