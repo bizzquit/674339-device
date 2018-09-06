@@ -84,6 +84,28 @@ linkMapsClose.addEventListener("click", function (evt) {
 });
 
 
+var btnForm = document.querySelector(".writeus-btn");
+var formWriteUs = document.querySelector(".writeus");
+var nameForm = formWriteUs.querySelector("input[name=name]");
+var emailForm = formWriteUs.querySelector("input[name=email]");
+var textForm = formWriteUs.querySelector("textarea[name=message]");
+
+formWriteUs.addEventListener('submit', function (evn) {
+    if (!nameForm.value) {
+        evn.preventDefault();
+        nameForm.classList.add("no-valid");
+    }
+    if (!emailForm.value) {
+        evn.preventDefault();
+        emailForm.classList.add("no-valid");
+    }
+    if (!textForm.value) {
+        evn.preventDefault();
+        textForm.classList.add("no-valid");
+    }
+});
+
+
 
 /*-----УСЛУГИ---*/
 

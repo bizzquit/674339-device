@@ -2001,6 +2001,11 @@ a.active-sort,
     outline: 3px solid rgba(247, 226, 150, 1);
 }
 
+.no-valid {
+    background-color: rgba(237, 181, 181, 0.5);
+    outline: none;
+}
+
 .writeus label {
     display: block;
     font-family: 'Gilroy', 'Helvetica', sans-serif;
