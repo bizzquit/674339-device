@@ -616,6 +616,14 @@ a.footer-logo:active {
     line-height: 30px;
 }
 
+.slide1 p {
+    width: 500px;
+}
+
+.slide2 p {
+    width: 460px;
+}
+
 b.small-width {
     width: 250px;
 }
@@ -730,6 +738,15 @@ b.small-width {
     padding-left: 5px;
     width: 93px;
     text-align: left;
+}
+
+.specific-info td {
+    padding-top: 5px;
+    padding-left: 5px;
+    font-weight: 400;
+    font-size: 13px;
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    line-height: 20px;
 }
 
 .specific-digits td:nth-child(2) {
@@ -888,9 +905,9 @@ b.small-width {
     -ms-flex-align: baseline;
     margin-top: 25px;
     margin-right: 77px;
-    padding-top: 80px;
+    padding-top: 79px;
     min-height: 240px;
-    width: 275px;
+    width: 278px;
     border-right: 7px solid black;
 
     -webkit-box-orient: vertical;
@@ -901,7 +918,7 @@ b.small-width {
 
 .services-items-listing label {
     position: relative;
-    margin-bottom: 24px;
+    margin-bottom: 25px;
     min-height: 40px;
     width: 280px;
     cursor: pointer;
@@ -923,11 +940,11 @@ b.small-width {
     font-weight: 900;
     font-size: 47px;
     font-family: 'Gilroy', 'Helvetica', sans-serif;
-    line-height: 20px;
+    line-height: 48px;
 }
 
 .services-items-info {
-    padding-top: 48px;
+    padding-top: 34px;
 }
 
 .services-item-info::after {
@@ -961,8 +978,8 @@ b.small-width {
     position: relative;
     z-index: 0;
     display: inline-block;
-    margin-top: 5px;
-    width: 160px;
+    margin-top: 7px;
+    width: 166px;
     color: rgba(0, 0, 0, 1);
     text-align: center;
     text-decoration: none;
@@ -1111,7 +1128,9 @@ b.small-width {
 }
 
 .services-item-info p {
+    margin-top: -16px;
     width: 460px;
+    letter-spacing: normal;
 }
 
 .main-about {
@@ -1244,12 +1263,12 @@ form.filters {
 }
 
 .filter-price::before {
-    content: "";
     position: absolute;
+    right: 0px;
     width: 100%;
     height: 2px;
-    right: 0px;
     background-color: rgba(219, 219, 219, 1);
+    content: "";
 }
 
 .filter-price-line {
@@ -1319,7 +1338,7 @@ form.filters {
     margin-right: 10px;
     width: 27px;
     height: 40px;
-    background: url(../img/checkbox-off.svg) no-repeat 1px 8px;
+    background: url(../img/checkbox-off.svg) no-repeat 0px 6px;
     content: "";
 }
 
@@ -1343,7 +1362,7 @@ input:disabled ~ label::before {
 }
 
 input[type="checkbox"]:checked ~ label::before {
-    background: url(../img/checkbox-on.svg) no-repeat 1px 8px;
+    background: url(../img/checkbox-on.svg) no-repeat 0px 6px;
     background-repeat: no-repeat;
 }
 
@@ -1354,12 +1373,12 @@ input[type="checkbox"]:checked ~ label::before {
     margin-right: 10px;
     width: 27px;
     height: 40px;
-    background: url(../img/radio-off.svg) no-repeat 1px 8px;
+    background: url(../img/radio-off.svg) no-repeat 0px 5px;
     content: "";
 }
 
 input[type="radio"]:checked ~ label::before {
-    background: url(../img/radio-on.svg) no-repeat 1px 8px;
+    background: url(../img/radio-on.svg) no-repeat 0px 5px;
     background-repeat: no-repeat;
 }
 
@@ -1518,6 +1537,11 @@ a.active-sort,
     font-family: 'Gilroy', 'Helvetica', sans-serif;
     line-height: 24px;
 }
+
+.small-width {
+    width: 230px;
+}
+
 
 .price-product {
     color: rgba(70, 70, 70, 1);
@@ -1834,8 +1858,8 @@ a.active-sort,
 }
 
 .footer-nav-item {
-    padding-left: 15px;
     padding-top: 5px;
+    padding-left: 15px;
 }
 
 .nav-guarant {
