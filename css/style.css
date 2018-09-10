@@ -1191,7 +1191,7 @@ b.small-width {
     flex-direction: column;
     margin-left: 0;
     padding: 0;
-    padding-bottom: 8px;
+    padding-bottom: 9px;
     border: none;
     border-bottom: 2px solid #000000;
 
@@ -1237,9 +1237,19 @@ form.filters {
 }
 
 .filter-price {
+    position: relative;
     padding-top: 15px;
     width: 100%;
     height: 60px;
+}
+
+.filter-price::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    right: 0px;
+    background-color: rgba(219, 219, 219, 1);
 }
 
 .filter-price-line {
@@ -1266,12 +1276,12 @@ form.filters {
 
 .filter-price-point.point-left {
     top: -10px;
-    left: -10px;
+    left: -5px;
 }
 
 .filter-price-point.point-right {
     top: -10px;
-    right: -10px;
+    right: -13px;
 }
 
 .filter-price-point-title {
@@ -1279,13 +1289,13 @@ form.filters {
 }
 
 .filter-price-point-title.point-left {
-    top: 10px;
+    top: 13px;
     left: 0px;
 }
 
 .filter-price-point-title.point-right {
-    top: 10px;
-    right: -30px;
+    top: 13px;
+    right: -29px;
 }
 
 .filter-price-point-title {

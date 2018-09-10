@@ -90,7 +90,7 @@ var nameForm = formWriteUs.querySelector("input[name=name]");
 var emailForm = formWriteUs.querySelector("input[name=email]");
 var textForm = formWriteUs.querySelector("textarea[name=message]");
 
-formWriteUs.addEventListener('submit', function (evn) {
+formWriteUs.addEventListener("submit", function (evn) {
     if (!nameForm.value) {
         evn.preventDefault();
         nameForm.classList.add("no-valid");
