@@ -1246,8 +1246,8 @@ form.filters {
 }
 
 .left-container legend {
-    margin-top: 10px;
     margin-bottom: 20px;
+    padding-top: 10px;
     letter-spacing: 0.01em;
     font-weight: 900;
     font-size: 18px;
